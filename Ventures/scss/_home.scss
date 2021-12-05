@@ -1,0 +1,52 @@
+/**** index page styles *****/
+
+.FV {
+    &-intro {
+        background: $bg2;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        .container {
+            max-width: 1060px;
+        }
+        h2 {
+            margin-bottom: 30px;
+        }
+        p {
+            font-size: 19px;
+            line-height: 28px;
+            color: #231f20;
+            font-family: "Gill-medium";
+            text-align: center;
+        }
+    }
+    &-documents {
+        padding-top: 40px;
+        .container {
+            max-width: 910px;
+            .row {
+                .col-md-6 {
+                    &:last-child {
+                        padding-left: 50px;
+                    }
+                    .row {
+                        margin: 0 -8px;
+                        .col-6 {
+                            padding-right: 10px;
+                            padding-left: 10px;
+                        }
+                    }
+                }
+            }
+        }
+        h2 {
+            margin-bottom: 25px;
+        }
+        .title {
+            margin-bottom: 10px;
+        }
+    }
+    &-logo {
+        padding-top: 100px;
+        padding-bottom: 16px;
+    }
+}
