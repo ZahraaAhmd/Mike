@@ -1,0 +1,289 @@
+/**** inner pages styles ****/
+
+
+/* login page style */
+
+.FV {
+    &-header-inner {
+        min-height: 42px;
+        background: $blue;
+        .d-flex {
+            padding-top: 6px;
+            padding-bottom: 6px;
+        }
+        a {
+            font-family: "D-DIN";
+            font-size: 22px;
+            line-height: 40px;
+            color: #ffffff;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        .inner-logo {
+            height: 50px
+        }
+        .logout-block {
+            display: inline-flex;
+            align-items: center;
+            a {
+                img {
+                    width: 30px
+                }
+            }
+            .cube-img {
+                width: 50px;
+                margin-left: 10px;
+            }
+        }
+    }
+    &-login {
+        height: calc(100vh - 145px);
+        overflow-y: auto;
+        padding-top: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .col-auto {
+            width: 105px
+        }
+        .page-logo {
+            margin-bottom: 50px;
+        }
+        .form-block {
+            h3 {
+                padding-left: 105px;
+                text-align: center;
+                margin-bottom: 10px;
+            }
+            .pb-0 {
+                position: relative;
+            }
+            .forget-btn {
+                font-family: 'Roboto', sans-serif;
+                font-size: 12px;
+                color: #231f20;
+                font-weight: bold;
+                text-transform: uppercase;
+                text-align: center;
+                i {
+                    color: #cb00d1;
+                    display: block;
+                    font-size: 18px;
+                    position: absolute;
+                    bottom: 0;
+                    left: 50px;
+                    animation: animate1 1s linear 1s infinite alternate;
+                }
+            }
+            .forget-password {
+                margin-top: 20px;
+                input {
+                    margin-bottom: 10px;
+                }
+            }
+            .btn {
+                padding: 11px 20px;
+                text-transform: uppercase;
+                font-weight: 500;
+                font-family: "roboto";
+                font-size: 18px;
+                line-height: 1;
+                margin-left: 10px;
+            }
+        }
+    }
+    &-inner {
+        height: calc(100% - 120px);
+        overflow-y: auto;
+    }
+    &-dashboard {
+        .left-menu {
+            margin-top: 10px;
+            @media(max-width: 991.98px) {
+                .page-links {
+                    display: none
+                }
+            }
+            @media(min-width:992px) {
+                .dropdown {
+                    display: none;
+                }
+            }
+            .dropdown {
+                margin-bottom: 24px;
+                .btn {
+                    width: 100%;
+                    text-align: left;
+                    background: transparent;
+                    color: #231f20;
+                    border: solid 1px $blue;
+                    padding: 10px 15px;
+                    font-size: 17px;
+                    font-weight: bold;
+                    font-family: 'Roboto', sans-serif;
+                    text-transform: uppercase;
+                    text-decoration: none !important;
+                    &::after {
+                        display: inline-block;
+                        /* margin-left: .255em; */
+                        vertical-align: 0em;
+                        content: "";
+                        border-top: .5em solid $blue;
+                        border-right: .5em solid transparent;
+                        border-bottom: 0;
+                        border-left: .5em solid transparent;
+                        float: right;
+                        margin-top: 10px;
+                    }
+                }
+                .dropdown-menu.show {
+                    transform: translate3d(0px, 55px, 0px) !important;
+                    right: 0;
+                    box-shadow: 0 9px 15px 0 rgba(197, 236, 250, 0.8);
+                    padding-top: 0;
+                    padding-bottom: 0;
+                    .dropdown-item {
+                        border-top: 1px solid #e6e8ea;
+                        -webkit-box-shadow: inset 0 1px 0 white;
+                        box-shadow: inset 0 1px 0 white;
+                        padding: 15px 10px;
+                        font-size: 17px;
+                        font-weight: bold;
+                        font-family: 'Roboto', sans-serif;
+                        text-transform: uppercase;
+                        color: inherit;
+                        text-decoration: none !important;
+                        &:first-child {
+                            border: 0;
+                        }
+                        &:last-child {
+                            display: none;
+                        }
+                        &.active {
+                            background: $blue;
+                            color: #fff;
+                            font-weight: 600;
+                            border-color: $blue;
+                        }
+                    }
+                }
+            }
+            .page-links {
+                list-style-type: none;
+                list-style: none;
+                padding: 0;
+                li {
+                    background: #eaeaea;
+                    margin-top: 5px;
+                    position: relative;
+                    a {
+                        display: block;
+                        padding: 15px;
+                        font-size: 17px;
+                        font-weight: bold;
+                        font-family: 'Roboto', sans-serif;
+                        text-transform: uppercase;
+                        color: inherit;
+                        text-decoration: none !important;
+                        .note-num {
+                            color: $head-color;
+                            margin-left: 5px;
+                        }
+                        &:hover {
+                            color: $head-color
+                        }
+                    }
+                    &.active {
+                        &::before {
+                            content: "\f061";
+                            font-family: 'Font Awesome 5 Free';
+                            color: #e01e378f;
+                            position: absolute;
+                            right: 15px;
+                            top: calc(50% - 15px);
+                            font-weight: 900;
+                            font-size: 20px;
+                            animation: animate2 1s linear 1s infinite alternate;
+                        }
+                    }
+                }
+            }
+        }
+        .document-head {
+            background: #0679ac;
+            color: #fff;
+            padding: 10px;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-family: "roboto";
+        }
+        .table-search {
+            max-width: 510px;
+            margin-top: 15px;
+            label {
+                font-size: 14px;
+                font-weight: 600;
+                font-family: "roboto";
+                text-transform: uppercase;
+            }
+            .btn-primary {
+                padding: 8px 20px;
+                text-transform: uppercase;
+                line-height: 1;
+                font-family: 'Roboto';
+                font-size: 12px;
+            }
+        }
+        .table {
+            th,
+            td {
+                border: 0;
+                vertical-align: middle;
+                text-transform: capitalize;
+                font-weight: 600;
+                .btn {
+                    text-transform: uppercase;
+                    box-shadow: none !important;
+                    outline: none !important;
+                    font-family: "roboto";
+                    font-weight: bold;
+                    color: #ffffff;
+                }
+            }
+            thead {
+                th {
+                    background: #eaeaea;
+                    color: $head-color;
+                    .btn {
+                        font-size: 14px;
+                        padding: 10px 20px
+                    }
+                }
+            }
+            tbody {
+                tr {
+                    td {
+                        background: #f8f8f8;
+                        .btn {
+                            font-size: 12px;
+                            width: 95px;
+                            margin: 0 3px;
+                            &.btn-danger {
+                                &:hover {
+                                    background: #231f20;
+                                    border-color: #231f20;
+                                }
+                            }
+                        }
+                    }
+                    &:nth-child(even) {
+                        td {
+                            background: #eaeaea
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

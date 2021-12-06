@@ -2,6 +2,8 @@
 
 body {
     font-family: "Gill Sans";
+    height: 100vh;
+    color: #231f20;
 }
 
 .container {
@@ -31,4 +33,64 @@ h2 {
     color: $title-color;
     font-family: "Bushcraft", "one shadow";
     text-align: center;
+}
+
+.btn {
+    border-radius: 0;
+    transition: all 0.3s ease;
+    i {
+        font-size: 16px;
+    }
+    &.btn-primary {
+        background: $blue;
+        border-color: $blue
+    }
+    &.btn-danger {
+        background: #e01e37;
+        border-color: #e01e37;
+        &:hover {
+            background: $blue;
+            border-color: $blue;
+        }
+    }
+}
+
+.text-blue {
+    color: $blue
+}
+
+@-webkit-keyframes animate1 {
+    0% {
+        bottom: 0px;
+    }
+    100% {
+        bottom: 5px;
+    }
+}
+
+@keyframes animate1 {
+    0% {
+        bottom: 0px;
+    }
+    100% {
+        bottom: 3px;
+    }
+}
+
+@-webkit-keyframes animate2 {
+    0% {
+        right: 15px
+    }
+    100% {
+        right: 20px
+    }
+}
+
+@keyframes animate2 {
+    0% {
+        right: 15px
+    }
+    100% {
+        right: 20px
+    }
 }

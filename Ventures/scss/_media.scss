@@ -1,0 +1,245 @@
+    /*** media query styles ****/
+    
+    @media(max-width:1200px) {
+        header {
+            background-position: top 0px left;
+        }
+    }
+    
+    @media(max-width:991.98px) {
+        .container {
+            padding-right: 40px;
+            padding-left: 40px;
+        }
+        .FV-documents {
+            padding-top: 50px;
+            padding-bottom: 50px;
+            .container {
+                max-width: 780px
+            }
+            .justify-content-between {
+                justify-content: center !important;
+            }
+            h2 {
+                font-size: 63px;
+                margin-bottom: 20px;
+                margin-bottom: 40px;
+                line-height: 57px;
+            }
+            .title {
+                min-height: 44px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 15px;
+            }
+            .col-lg-6 {
+                &:first-child {
+                    margin-bottom: 104px;
+                }
+            }
+        }
+        footer {
+            .container {
+                max-width: 100%;
+                .row {
+                    align-items: center;
+                    .col-lg-6 {
+                        border: 0 !important;
+                        padding: 40px 15px 0 15px;
+                        .col {}
+                    }
+                }
+            }
+            h3 {
+                font-size: 44px;
+                line-height: 40px;
+                text-align: left;
+            }
+            p {
+                font-size: 24px;
+                text-align: left;
+            }
+            .contact-btns {
+                max-width: 100px;
+            }
+        }
+        .top-block {
+            .container {
+                padding: 0;
+                .col {
+                    width: 100%;
+                    flex: 0 0 100%
+                }
+            }
+        }
+        header .top-block {
+            .row {
+                margin: 0;
+            }
+            .col-auto {
+                position: absolute;
+                right: 0px;
+                top: 30px;
+            }
+        }
+        header {
+            background-position: top 0px left;
+            background: $title-color;
+            .top-block .row {
+                height: auto;
+            }
+        }
+        header .main-menu {
+            margin-top: -2px;
+        }
+        header .main-menu .menu-block ul li {
+            padding: 20px 30px;
+        }
+        header .top-block .logout-btn {
+            width: 40px
+        }
+        .FV-dashboard .table tbody tr td .btn {
+            margin: 3px 0
+        }
+        .FV-dashboard .table thead th .btn {
+            padding: 10px
+        }
+    }
+    
+    @media(max-width:767.98px) {
+        footer .contact-btns {
+            max-width: 60px;
+        }
+        header .top-block .col-auto {
+            position: absolute;
+            right: 0px;
+            top: 15px;
+            display: none
+        }
+        .FV-intro h2 {
+            font-size: 30px
+        }
+        .FV-intro p {
+            font-size: 16px;
+            line-height: 22px;
+        }
+        .FV-documents h2 {
+            font-size: 35px;
+            margin-bottom: 20px;
+            line-height: 50px;
+        }
+        footer p {
+            font-size: 20px;
+        }
+        footer h3 {
+            font-size: 35px;
+            line-height: 35px;
+        }
+        header .top-block .logout-btn img {
+            max-width: 25px;
+        }
+        .table-search {
+            .row {
+                margin-right: 0;
+                label {
+                    width: 100%
+                }
+            }
+        }
+        .FV-dashboard .table-search .btn-primary {
+            padding: 8px 10px;
+        }
+        .logout-text {
+            display: none;
+        }
+    }
+    
+    @media(max-width:575.98px) {
+        .container {
+            padding-right: 25px;
+            padding-left: 25px;
+        }
+        header .main-menu .menu-block ul li a {
+            font-size: 20px;
+            line-height: 1
+        }
+        header .main-menu .update-date {
+            font-size: 10px;
+        }
+        .FV-documents .col-sm-3 {
+            margin-bottom: 15px;
+        }
+        .FV-documents .col-lg-6:first-child {
+            margin-bottom: 40px;
+        }
+        .top-container .col {
+            flex: 0 0 100%;
+            margin-bottom: 20px;
+        }
+        footer p,
+        footer h3 {
+            text-align: center;
+        }
+        footer .row {
+            justify-content: center;
+        }
+        .FV-login .col-auto {
+            width: 100%;
+        }
+        .FV-login .form-block h3 {
+            padding-left: 0;
+        }
+        .FV-dashboard {
+            .table {
+                thead {
+                    display: none
+                }
+                tr {
+                    display: flex;
+                    flex-wrap: wrap;
+                    td {
+                        position: relative;
+                        width: 100%;
+                        flex: 0 0 100%;
+                        max-width: 100%;
+                        &:nth-child(3) {
+                            flex: 0 0 120px;
+                            max-width: 120px;
+                        }
+                        &:last-child {
+                            flex: 0 0 calc(100% - 120px);
+                            max-width: calc(100% - 120px);
+                        }
+                    }
+                }
+            }
+        }
+        .FV-header-inner .logout-block .cube-img {
+            width: 30px;
+            margin-left: 5px;
+        }
+        .FV-header-inner .logout-block a img {
+            width: 25px;
+        }
+        .FV-header-inner .inner-logo {
+            height: 35px;
+        }
+        footer.inner-footer .absolute-img {
+            top: -23px;
+        }
+        .FV-login .page-logo {
+            margin-bottom: 25px;
+        }
+    }
+    
+    @media(max-width:400px) {
+        .FV-login .form-block .btn {
+            padding: 11px 12px;
+        }
+        .FV-dashboard .table tr td:nth-child(3),
+        .FV-dashboard .table tr td:last-child {
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+    }

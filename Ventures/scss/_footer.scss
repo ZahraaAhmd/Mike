@@ -7,7 +7,7 @@ footer {
         max-width: 710px;
         position: relative;
         &.top-container {
-            .col-md-6 {
+            .col-lg-6 {
                 padding-top: 20px;
                 padding-bottom: 46px;
                 &:first-child {
@@ -21,12 +21,20 @@ footer {
             }
         }
     }
+    .contact-btns {
+        width: 100%;
+        max-width: 50px
+    }
     .absolute-img {
         position: absolute;
         bottom: 0px;
         margin: 0 auto;
         text-align: center;
         width: 100%;
+        left: 0;
+        @media(min-width: 992px) {
+            bottom: -2px
+        }
     }
     p {
         font-size: 11px;
@@ -53,5 +61,24 @@ footer {
         background: $title-color;
         padding-top: 20px;
         padding-bottom: 15px;
+        img {
+            max-width: 200px;
+        }
+    }
+    &.inner-footer {
+        background: $blue;
+        margin-top: 40px;
+        .copyright {
+            background: $blue;
+            z-index: 3;
+            position: relative;
+        }
+        .absolute-img {
+            top: -30px;
+            img {
+                width: 100%;
+                max-width: 601px;
+            }
+        }
     }
 }

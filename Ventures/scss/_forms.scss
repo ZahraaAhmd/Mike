@@ -1,0 +1,41 @@
+/*** forms style ****/
+
+label,
+.form-block h3 {
+    font-size: 17px;
+    color: #231f20;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+}
+
+label {
+    margin-bottom: 0;
+}
+
+.form-group {
+    margin-bottom: 10px;
+    &.row {
+        align-items: center;
+    }
+}
+
+.form-control {
+    background-color: #e0e0e0;
+    border-color: #e0e0e0;
+    border-radius: 0;
+    transition: all 0.3s ease;
+    &:hover,
+    &:focus {
+        border-color: $blue;
+        background: #fff;
+        box-shadow: none;
+        outline: none;
+    }
+}
+
+.inner-box {
+    width: 100%;
+    max-width: 410px;
+    margin: 0 auto;
+}

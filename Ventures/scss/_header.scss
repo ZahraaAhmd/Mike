@@ -1,14 +1,15 @@
 /**** start header style ****/
 
 header {
+    background: $blue;
+    background-image: url(../images/hero-bg2.png), linear-gradient(to bottom, $blue calc(100% - 66px), $title-color 70px);
+    background-position: top 0px center;
+    background-repeat: no-repeat, repeat, repeat;
     /*top-block style */
     .top-block {
-        background: $blue;
-        .animal-img {
-            margin-bottom: -70px;
-            margin-left: -25px;
-            z-index: 3;
-            position: relative;
+        .row {
+            height: 200px;
+            align-items: center
         }
         .logout-btn {
             font-family: "D-DIN";
@@ -23,13 +24,16 @@ header {
             img {
                 display: block;
                 margin: 0 auto;
+                max-width: 40px
             }
         }
     }
     .main-menu {
-        background: $title-color;
         position: relative;
         color: $bg2;
+        @media(min-width: 992px) {
+            margin-top: -1px;
+        }
         .d-flex {
             max-width: 900px;
             height: 70px
@@ -56,11 +60,26 @@ header {
                     background-color: $bg2;
                     margin-top: 2px;
                     margin-bottom: 2px;
+                    transition: all 0.3s linear;
                     &:first-child {
                         margin-top: 0;
                     }
                     &:last-child {
                         margin-bottom: 0;
+                    }
+                }
+                &.open {
+                    span {
+                        &:first-child {
+                            transform: translate(0px, 8px) rotate( -45deg) scalex(1);
+                        }
+                        &:last-child {
+                            transform: translate(0px, 0px) rotate(43deg) scalex(1);
+                        }
+                        &:nth-child(2) {
+                            width: 0;
+                            height: 0;
+                        }
                     }
                 }
             }
@@ -78,7 +97,39 @@ header {
             background: #431211;
             width: 100%;
             left: 0;
-            display: none
+            z-index: 99;
+            display: none;
+            ul {
+                padding: 0;
+                margin: 0 auto;
+                max-width: 1170px;
+                border-top: 5px solid #ffd8b6;
+                li {
+                    list-style: none;
+                    list-style-type: none;
+                    border-bottom: 3px solid #ffd8b6;
+                    padding: 20px 0px;
+                    transition: all 250ms ease;
+                    a {
+                        color: #ffd8b6;
+                        font-weight: bold;
+                        font-size: 23px;
+                        text-transform: capitalize;
+                        letter-spacing: 1px;
+                        text-decoration: none !important;
+                        width: 100%;
+                    }
+                    &:hover {
+                        border-color: #fff;
+                        a {
+                            color: #fff
+                        }
+                    }
+                    &:last-child {
+                        border: 0;
+                    }
+                }
+            }
         }
     }
 }
