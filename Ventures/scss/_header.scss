@@ -1,11 +1,11 @@
 /**** start header style ****/
 
 header {
-    background: $blue;
+    /* background: $blue;
     background-image: url(../images/hero-bg2.png), linear-gradient(to bottom, $blue calc(100% - 66px), $title-color 70px);
     background-position: top 0px center;
     background-repeat: no-repeat, repeat, repeat;
-    /*top-block style */
+    top-block style */
     .top-block {
         .row {
             height: 200px;
@@ -29,13 +29,14 @@ header {
         }
     }
     .main-menu {
+        background: $title-color;
         position: relative;
         color: $bg2;
         @media(min-width: 992px) {
             margin-top: -1px;
         }
         .d-flex {
-            max-width: 900px;
+            padding-right: 227px;
             height: 70px
         }
         .button-toggler {
@@ -45,8 +46,8 @@ header {
             box-shadow: none;
             border: 0;
             padding: 0;
-            font-size: 25px;
-            line-height: 23px;
+            font-size: 22px;
+            line-height: 1;
             font-family: "Bushcraft", "one shadow";
             color: $bg2;
             align-items: center;
@@ -56,25 +57,27 @@ header {
                 span {
                     display: block;
                     width: 100%;
-                    height: 7px;
+                    height: 6px;
                     background-color: $bg2;
-                    margin-top: 2px;
-                    margin-bottom: 2px;
+                    margin-top: 4px;
+                    margin-bottom: 4px;
                     transition: all 0.3s linear;
                     &:first-child {
                         margin-top: 0;
+                        margin-bottom: 0;
                     }
                     &:last-child {
+                        margin-top: 0;
                         margin-bottom: 0;
                     }
                 }
                 &.open {
                     span {
                         &:first-child {
-                            transform: translate(0px, 8px) rotate( -45deg) scalex(1);
+                            transform: translate(0px, 9px) rotate( -45deg) scalex(1);
                         }
                         &:last-child {
-                            transform: translate(0px, 0px) rotate(43deg) scalex(1);
+                            transform: translate(0px, 0px) rotate(45deg) scalex(1);
                         }
                         &:nth-child(2) {
                             width: 0;
@@ -103,17 +106,17 @@ header {
                 padding: 0;
                 margin: 0 auto;
                 max-width: 1170px;
-                border-top: 5px solid #ffd8b6;
+                border-top: 3px solid #ffd8b6;
                 li {
                     list-style: none;
                     list-style-type: none;
-                    border-bottom: 3px solid #ffd8b6;
+                    border-bottom: 1px solid #ffd8b6;
                     padding: 20px 0px;
                     transition: all 250ms ease;
                     a {
                         color: #ffd8b6;
                         font-weight: bold;
-                        font-size: 23px;
+                        font-size: 20px;
                         text-transform: capitalize;
                         letter-spacing: 1px;
                         text-decoration: none !important;
@@ -131,5 +134,59 @@ header {
                 }
             }
         }
+    }
+}
+
+.FV-hero {
+    background: $blue url("../images/blue-bar-pattern.png") no-repeat center top;
+    .container {
+        position: relative;
+    }
+    .d-flex {
+        padding-top: 5px;
+        div {
+            display: inline-flex;
+            align-items: flex-end;
+            margin-bottom: -10px;
+        }
+    }
+    .header-logo {
+        max-height: 100px;
+    }
+    .pizza-guy {
+        max-height: 133px;
+    }
+    .palm-tree {
+        max-height: 168px;
+    }
+    .animal-img {
+        height: 220px;
+        margin-bottom: -70px;
+        position: relative;
+        z-index: 3;
+        margin-left: -15px;
+        display: inline-block !important;
+        margin-top: 8px;
+    }
+    .logout-btn {
+        font-family: "D-DIN";
+        font-size: 25px;
+        line-height: 40px;
+        color: #ffffff;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        width: 80px;
+        display: inline-block;
+        img {
+            display: block;
+            margin: 0 auto;
+            max-width: 40px
+        }
+    }
+    .edge-img {
+        position: absolute;
+        left: 15px;
+        bottom: 0px;
     }
 }

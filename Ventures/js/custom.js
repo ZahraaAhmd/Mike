@@ -3,9 +3,12 @@ $(document).ready(function() {
         $(".menu-block").slideToggle();
         $(".toggle-menu").toggleClass("open")
     });
-
-    /***menu as dropdown on small screens ***/
-    // DOM ready
+    $(".forget-btn").click(function() {
+            $(".forget-password").slideToggle();
+            $(".FV-login .form-block .forget-btn i").slideToggle()
+        })
+        /***menu as dropdown on small screens ***/
+        // DOM ready
     $(function() {
 
         // Create the dropdown base

@@ -22,8 +22,8 @@ footer {
         }
     }
     .contact-btns {
-        width: 100%;
-        max-width: 50px
+        width: 50px;
+        height: 50px
     }
     .absolute-img {
         position: absolute;
@@ -52,6 +52,9 @@ footer {
     }
     .flower-img {
         margin-bottom: -160px;
+        height: 135px;
+        z-index: 99;
+        position: relative;
     }
     .insta-id {
         width: calc(100% + 40px);
@@ -62,7 +65,7 @@ footer {
         padding-top: 20px;
         padding-bottom: 15px;
         img {
-            max-width: 200px;
+            max-width: 190px;
         }
     }
     &.inner-footer {

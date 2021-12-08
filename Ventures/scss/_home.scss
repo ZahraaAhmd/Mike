@@ -24,9 +24,11 @@
         .container {
             max-width: 910px;
             .row {
-                .col-md-6 {
-                    &:last-child {
-                        padding-left: 50px;
+                .col-lg-6 {
+                    @media(min-width: 992px) {
+                        &:last-child {
+                            padding-left: 50px;
+                        }
                     }
                     .row {
                         margin: 0 -8px;
@@ -45,14 +47,14 @@
             margin-bottom: 10px;
         }
         img {
-            max-width: 80px
+            max-width: 65px
         }
     }
     &-logo {
         padding-top: 100px;
         padding-bottom: 16px;
         img {
-            max-width: 300px;
+            max-width: 330px;
         }
     }
 }

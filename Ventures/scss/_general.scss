@@ -14,9 +14,19 @@ img {
     max-width: 100%;
 }
 
+
+/*img {
+    image-rendering: optimizeSpeed;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: optimize-contrast;
+    image-rendering: pixelated;
+    -ms-interpolation-mode: nearest-neighbor;
+}*/
+
 a {
     transition: color 250ms ease;
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
 h2 {
@@ -57,6 +67,10 @@ h2 {
 
 .text-blue {
     color: $blue
+}
+
+.d-relative {
+    position: relative;
 }
 
 @-webkit-keyframes animate1 {

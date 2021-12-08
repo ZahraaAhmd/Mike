@@ -58,9 +58,17 @@ img {
   max-width: 100%;
 }
 
+/*img {
+    image-rendering: optimizeSpeed;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: optimize-contrast;
+    image-rendering: pixelated;
+    -ms-interpolation-mode: nearest-neighbor;
+}*/
 a {
   transition: color 250ms ease;
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 h2 {
@@ -107,6 +115,10 @@ h2 {
   color: #0679ac;
 }
 
+.d-relative {
+  position: relative;
+}
+
 @keyframes animate1 {
   0% {
     bottom: 0px;
@@ -127,11 +139,11 @@ h2 {
 
 /**** start header style ****/
 header {
-  background: #0679ac;
-  background-image: url(../images/hero-bg2.png), linear-gradient(to bottom, #0679ac calc(100% - 66px), #431211 70px);
-  background-position: top 0px center;
-  background-repeat: no-repeat, repeat, repeat;
-  /*top-block style */
+  /* background: $blue;
+    background-image: url(../images/hero-bg2.png), linear-gradient(to bottom, $blue calc(100% - 66px), $title-color 70px);
+    background-position: top 0px center;
+    background-repeat: no-repeat, repeat, repeat;
+    top-block style */
 }
 
 header .top-block .row {
@@ -158,6 +170,7 @@ header .top-block .logout-btn img {
 }
 
 header .main-menu {
+  background: #431211;
   position: relative;
   color: #f8d5b2;
 }
@@ -169,7 +182,7 @@ header .main-menu {
 }
 
 header .main-menu .d-flex {
-  max-width: 900px;
+  padding-right: 227px;
   height: 70px;
 }
 
@@ -180,8 +193,8 @@ header .main-menu .button-toggler {
   box-shadow: none;
   border: 0;
   padding: 0;
-  font-size: 25px;
-  line-height: 23px;
+  font-size: 22px;
+  line-height: 1;
   font-family: "Bushcraft", "one shadow";
   color: #f8d5b2;
   align-items: center;
@@ -195,27 +208,29 @@ header .main-menu .button-toggler .toggle-menu {
 header .main-menu .button-toggler .toggle-menu span {
   display: block;
   width: 100%;
-  height: 7px;
+  height: 6px;
   background-color: #f8d5b2;
-  margin-top: 2px;
-  margin-bottom: 2px;
+  margin-top: 4px;
+  margin-bottom: 4px;
   transition: all 0.3s linear;
 }
 
 header .main-menu .button-toggler .toggle-menu span:first-child {
   margin-top: 0;
+  margin-bottom: 0;
 }
 
 header .main-menu .button-toggler .toggle-menu span:last-child {
+  margin-top: 0;
   margin-bottom: 0;
 }
 
 header .main-menu .button-toggler .toggle-menu.open span:first-child {
-  transform: translate(0px, 8px) rotate(-45deg) scalex(1);
+  transform: translate(0px, 9px) rotate(-45deg) scalex(1);
 }
 
 header .main-menu .button-toggler .toggle-menu.open span:last-child {
-  transform: translate(0px, 0px) rotate(43deg) scalex(1);
+  transform: translate(0px, 0px) rotate(45deg) scalex(1);
 }
 
 header .main-menu .button-toggler .toggle-menu.open span:nth-child(2) {
@@ -246,13 +261,13 @@ header .main-menu .menu-block ul {
   padding: 0;
   margin: 0 auto;
   max-width: 1170px;
-  border-top: 5px solid #ffd8b6;
+  border-top: 3px solid #ffd8b6;
 }
 
 header .main-menu .menu-block ul li {
   list-style: none;
   list-style-type: none;
-  border-bottom: 3px solid #ffd8b6;
+  border-bottom: 1px solid #ffd8b6;
   padding: 20px 0px;
   transition: all 250ms ease;
 }
@@ -260,7 +275,7 @@ header .main-menu .menu-block ul li {
 header .main-menu .menu-block ul li a {
   color: #ffd8b6;
   font-weight: bold;
-  font-size: 23px;
+  font-size: 20px;
   text-transform: capitalize;
   letter-spacing: 1px;
   text-decoration: none !important;
@@ -277,6 +292,70 @@ header .main-menu .menu-block ul li:hover a {
 
 header .main-menu .menu-block ul li:last-child {
   border: 0;
+}
+
+.FV-hero {
+  background: #0679ac url("../images/blue-bar-pattern.png") no-repeat center top;
+}
+
+.FV-hero .container {
+  position: relative;
+}
+
+.FV-hero .d-flex {
+  padding-top: 5px;
+}
+
+.FV-hero .d-flex div {
+  display: inline-flex;
+  align-items: flex-end;
+  margin-bottom: -10px;
+}
+
+.FV-hero .header-logo {
+  max-height: 100px;
+}
+
+.FV-hero .pizza-guy {
+  max-height: 133px;
+}
+
+.FV-hero .palm-tree {
+  max-height: 168px;
+}
+
+.FV-hero .animal-img {
+  height: 220px;
+  margin-bottom: -70px;
+  position: relative;
+  z-index: 3;
+  margin-left: -15px;
+  display: inline-block !important;
+  margin-top: 8px;
+}
+
+.FV-hero .logout-btn {
+  font-family: "D-DIN";
+  font-size: 25px;
+  line-height: 40px;
+  color: #ffffff;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  width: 80px;
+  display: inline-block;
+}
+
+.FV-hero .logout-btn img {
+  display: block;
+  margin: 0 auto;
+  max-width: 40px;
+}
+
+.FV-hero .edge-img {
+  position: absolute;
+  left: 15px;
+  bottom: 0px;
 }
 
 /*** forms style ****/
@@ -352,15 +431,17 @@ label {
   max-width: 910px;
 }
 
-.FV-documents .container .row .col-md-6:last-child {
-  padding-left: 50px;
+@media (min-width: 992px) {
+  .FV-documents .container .row .col-lg-6:last-child {
+    padding-left: 50px;
+  }
 }
 
-.FV-documents .container .row .col-md-6 .row {
+.FV-documents .container .row .col-lg-6 .row {
   margin: 0 -8px;
 }
 
-.FV-documents .container .row .col-md-6 .row .col-6 {
+.FV-documents .container .row .col-lg-6 .row .col-6 {
   padding-right: 10px;
   padding-left: 10px;
 }
@@ -374,7 +455,7 @@ label {
 }
 
 .FV-documents img {
-  max-width: 80px;
+  max-width: 65px;
 }
 
 .FV-logo {
@@ -383,7 +464,7 @@ label {
 }
 
 .FV-logo img {
-  max-width: 300px;
+  max-width: 330px;
 }
 
 /**** inner pages styles ****/
@@ -409,7 +490,7 @@ label {
 }
 
 .FV-header-inner .inner-logo {
-  height: 50px;
+  height: 65px;
 }
 
 .FV-header-inner .logout-block {
@@ -417,12 +498,16 @@ label {
   align-items: center;
 }
 
+.FV-header-inner .logout-block a {
+  text-decoration: none !important;
+}
+
 .FV-header-inner .logout-block a img {
   width: 30px;
 }
 
 .FV-header-inner .logout-block .cube-img {
-  width: 50px;
+  width: 55px;
   margin-left: 10px;
 }
 
@@ -432,7 +517,7 @@ label {
   padding-top: 50px;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .FV-login .col-auto {
@@ -460,6 +545,7 @@ label {
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
+  cursor: pointer;
 }
 
 .FV-login .form-block .forget-btn i {
@@ -470,10 +556,12 @@ label {
   bottom: 0;
   left: 50px;
   animation: animate1 1s linear 1s infinite alternate;
+  display: none;
 }
 
 .FV-login .form-block .forget-password {
   margin-top: 20px;
+  display: none;
 }
 
 .FV-login .form-block .forget-password input {
@@ -724,8 +812,8 @@ footer .container.top-container .col-lg-6:last-child {
 }
 
 footer .contact-btns {
-  width: 100%;
-  max-width: 50px;
+  width: 50px;
+  height: 50px;
 }
 
 footer .absolute-img {
@@ -761,6 +849,9 @@ footer h3 {
 
 footer .flower-img {
   margin-bottom: -160px;
+  height: 135px;
+  z-index: 99;
+  position: relative;
 }
 
 footer .insta-id {
@@ -775,7 +866,7 @@ footer .copyright {
 }
 
 footer .copyright img {
-  max-width: 200px;
+  max-width: 190px;
 }
 
 footer.inner-footer {
@@ -799,12 +890,6 @@ footer.inner-footer .absolute-img img {
 }
 
 /*** media query styles ****/
-@media (max-width: 1200px) {
-  header {
-    background-position: top 0px left;
-  }
-}
-
 @media (max-width: 991.98px) {
   .container {
     padding-right: 40px;
@@ -856,7 +941,9 @@ footer.inner-footer .absolute-img img {
     text-align: left;
   }
   footer .contact-btns {
+    width: 100%;
     max-width: 100px;
+    height: auto;
   }
   .top-block .container {
     padding: 0;
@@ -865,23 +952,42 @@ footer.inner-footer .absolute-img img {
     width: 100%;
     flex: 0 0 100%;
   }
-  header .top-block .row {
+  header .FV-hero {
+    /*height: 330px;
+            background: url("../images/mobile-header.png");
+            background-size: 100% 100%;*/
+    background: transparent;
+    position: relative;
+    z-index: 3;
+  }
+  header .FV-hero .container {
+    padding: 0;
+  }
+  header .FV-hero .row {
     margin: 0;
   }
-  header .top-block .col-auto {
+  header .FV-hero .col-auto {
     position: absolute;
     right: 0px;
-    top: 30px;
+    top: 15px;
   }
-  header {
-    background-position: top 0px left;
-    background: #431211;
+  header .FV-hero .logout-btn {
+    width: 35px;
+  }
+  header .FV-hero .logout-btn img {
+    width: 35px;
+  }
+  header .FV-hero .animal-img {
+    display: none !important;
   }
   header .top-block .row {
     height: auto;
   }
   header .main-menu {
-    margin-top: -2px;
+    margin-top: -15px;
+  }
+  header .main-menu .d-flex {
+    padding-right: 10px;
   }
   header .main-menu .menu-block ul li {
     padding: 20px 30px;
@@ -895,11 +1001,24 @@ footer.inner-footer .absolute-img img {
   .FV-dashboard .table thead th .btn {
     padding: 10px;
   }
+  .FV-documents img {
+    max-width: 75px;
+  }
+  footer .container.top-container .col-lg-6:first-child {
+    padding-right: 15px;
+  }
+  .insta-sm {
+    position: absolute;
+    left: 15px;
+    top: 30%;
+    width: 50%;
+    height: 50%;
+  }
 }
 
 @media (max-width: 767.98px) {
   footer .contact-btns {
-    max-width: 60px;
+    width: 80px;
   }
   header .top-block .col-auto {
     position: absolute;
@@ -961,9 +1080,11 @@ footer.inner-footer .absolute-img img {
   .FV-documents .col-lg-6:first-child {
     margin-bottom: 40px;
   }
-  .top-container .col {
-    flex: 0 0 100%;
-    margin-bottom: 20px;
+  .top-container .col-auto:last-child {
+    padding-left: 0;
+  }
+  footer .contact-btns {
+    width: 65px;
   }
   footer p,
   footer h3 {
@@ -1014,6 +1135,15 @@ footer.inner-footer .absolute-img img {
   }
   .FV-login .page-logo {
     margin-bottom: 25px;
+  }
+}
+
+@media (max-width: 450px) {
+  footer .container .row .col-lg-6 {
+    padding: 25px 15px 10px 15px;
+  }
+  footer .contact-btns {
+    width: 50px;
   }
 }
 

@@ -21,18 +21,19 @@
             letter-spacing: 2px;
         }
         .inner-logo {
-            height: 50px
+            height: 65px
         }
         .logout-block {
             display: inline-flex;
             align-items: center;
             a {
+                text-decoration: none !important;
                 img {
                     width: 30px
                 }
             }
             .cube-img {
-                width: 50px;
+                width: 55px;
                 margin-left: 10px;
             }
         }
@@ -43,7 +44,7 @@
         padding-top: 50px;
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
         .col-auto {
             width: 105px
         }
@@ -66,6 +67,7 @@
                 font-weight: bold;
                 text-transform: uppercase;
                 text-align: center;
+                cursor: pointer;
                 i {
                     color: #cb00d1;
                     display: block;
@@ -74,10 +76,12 @@
                     bottom: 0;
                     left: 50px;
                     animation: animate1 1s linear 1s infinite alternate;
+                    display: none;
                 }
             }
             .forget-password {
                 margin-top: 20px;
+                display: none;
                 input {
                     margin-bottom: 10px;
                 }

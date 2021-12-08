@@ -1,10 +1,6 @@
     /*** media query styles ****/
     
-    @media(max-width:1200px) {
-        header {
-            background-position: top 0px left;
-        }
-    }
+    @media(max-width:1200px) {}
     
     @media(max-width:991.98px) {
         .container {
@@ -61,7 +57,9 @@
                 text-align: left;
             }
             .contact-btns {
+                width: 100%;
                 max-width: 100px;
+                height: auto;
             }
         }
         .top-block {
@@ -73,25 +71,44 @@
                 }
             }
         }
-        header .top-block {
+        header .FV-hero {
+            /*height: 330px;
+            background: url("../images/mobile-header.png");
+            background-size: 100% 100%;*/
+            background: transparent;
+            position: relative;
+            z-index: 3;
+            .container {
+                padding: 0
+            }
             .row {
                 margin: 0;
             }
             .col-auto {
                 position: absolute;
                 right: 0px;
-                top: 30px;
+                top: 15px;
+            }
+            .logout-btn {
+                width: 35px;
+                img {
+                    width: 35px
+                }
+            }
+            .animal-img {
+                display: none !important
             }
         }
         header {
-            background-position: top 0px left;
-            background: $title-color;
             .top-block .row {
                 height: auto;
             }
         }
         header .main-menu {
-            margin-top: -2px;
+            margin-top: -15px;
+            .d-flex {
+                padding-right: 10px;
+            }
         }
         header .main-menu .menu-block ul li {
             padding: 20px 30px;
@@ -105,11 +122,24 @@
         .FV-dashboard .table thead th .btn {
             padding: 10px
         }
+        .FV-documents img {
+            max-width: 75px;
+        }
+        footer .container.top-container .col-lg-6:first-child {
+            padding-right: 15px;
+        }
+        .insta-sm {
+            position: absolute;
+            left: 15px;
+            top: 30%;
+            width: 50%;
+            height: 50%;
+        }
     }
     
     @media(max-width:767.98px) {
         footer .contact-btns {
-            max-width: 60px;
+            width: 80px;
         }
         header .top-block .col-auto {
             position: absolute;
@@ -173,9 +203,13 @@
         .FV-documents .col-lg-6:first-child {
             margin-bottom: 40px;
         }
-        .top-container .col {
-            flex: 0 0 100%;
-            margin-bottom: 20px;
+        .top-container .col-auto {
+            &:last-child {
+                padding-left: 0;
+            }
+        }
+        footer .contact-btns {
+            width: 65px;
         }
         footer p,
         footer h3 {
@@ -230,6 +264,15 @@
         }
         .FV-login .page-logo {
             margin-bottom: 25px;
+        }
+    }
+    
+    @media(max-width:450px) {
+        footer .container .row .col-lg-6 {
+            padding: 25px 15px 10px 15px;
+        }
+        footer .contact-btns {
+            width: 50px;
         }
     }
     
