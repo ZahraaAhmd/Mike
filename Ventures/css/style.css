@@ -968,17 +968,22 @@ footer.inner-footer .absolute-img img {
   }
   header .FV-hero .col-auto {
     position: absolute;
-    right: 0px;
-    top: 0px;
+    right: 10px;
+    top: 10px;
     padding-right: 0;
   }
   header .FV-hero .logout-btn {
-    width: auto;
-    background: rgba(67, 18, 17, 0.7);
-    padding: 10px;
+    background: #431211;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    box-shadow: #431211 0px 8px 24px;
   }
   header .FV-hero .logout-btn img {
-    width: 25px;
+    width: 22px;
   }
   header .FV-hero .animal-img {
     display: none !important;
