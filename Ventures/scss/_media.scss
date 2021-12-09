@@ -87,12 +87,15 @@
             .col-auto {
                 position: absolute;
                 right: 0px;
-                top: 15px;
+                top: 0px;
+                padding-right: 0;
             }
             .logout-btn {
-                width: 35px;
+                width: auto;
+                background: rgba($title-color, 0.7);
+                padding: 10px;
                 img {
-                    width: 35px
+                    width: 25px
                 }
             }
             .animal-img {
