@@ -579,7 +579,7 @@ label {
 }
 
 .FV-inner {
-  height: calc(100% - 120px);
+  height: calc(100% - 178px);
   overflow-y: auto;
 }
 
