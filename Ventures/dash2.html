@@ -1,0 +1,712 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" type="image/x-icon" href="images/icons/fav2.png">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Home | Family Ventures</title>
+</head>
+
+<body>
+    <!-- start page header block -->
+    <div class="FV-header-inner">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <a href="#"><img src="images/white-logo.png" class="inner-logo"></a>
+                <div class="logout-block">
+                    <a href="_logout.php"><span class="logout-text">logout</span> <img src="images/logout2.svg"></a>
+                    <img src="images/dominos-logo.png" class="cube-img">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- start section login -->
+    <section class="FV-dashboard FV-inner">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-12">
+                    <div class="left-menu">
+
+
+                        <ul class="page-links">
+                            <li class="active"><a href="employees.php">team members<span class="note-num">[402]</span></a></li>
+                            <li><a href="docs_cats.php">doc categories<span class="note-num">[3]</span></a></li>
+                            <li><a href="docs.php">documents<span class="note-num">[9]</span></a></li>
+                            <li><a href="mboard.php">welcome letter<span class="note-num"></span></a></li>
+                            <li><a href="admins.php">admins<span class="note-num">[5]</span></a></li>
+                            <li><a href="users_export.php">export team members</a></li>
+                            <li><a href="users_import.php">import team members</a></li>
+                        </ul>
+
+                    </div>
+
+                </div>
+                <div class="col-lg-9 col-12">
+                    <!-- start table search -->
+                    <div class="table-search">
+                        <form action="/resources/employees.php" method="post">
+                            <div class="form-group row">
+                                <label class="text-blue col-auto pr-0">search</label>
+                                <div class="col">
+                                    <input type="search" class="form-control" name="fkey" value="">
+                                </div>
+                                <button class="btn btn-primary col-auto">find account</button>
+                            </div>
+                        </form>
+                    </div>
+
+
+                    <p><b>Pages: </b><b style="color:#E01E37">1</b>, <a href="employees.php?pn=2" style="color:#000">2</a>, <a href="employees.php?pn=3" style="color:#000">3</a>, <a href="employees.php?pn=4" style="color:#000">4</a>, <a href="employees.php?pn=5"
+                            style="color:#000">5</a>, <a href="employees.php?pn=6" style="color:#000">6</a>, <a href="employees.php?pn=7" style="color:#000">7</a>, <a href="employees.php?pn=8" style="color:#000">8</a>, <a href="employees.php?pn=9" style="color:#000">9</a>                        </p>
+
+                    <!-- start documents table -->
+                    <div class="document-head d-block d-sm-none">documents information</div>
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">id</th>
+                                    <th scope="col">full name</th>
+                                    <th scope="col">email</th>
+                                    <th scope="col" class="text-center"><button class="btn btn-danger" onClick="location.href='employees_add.php'">+ADD NEW</button></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+
+                                <tr>
+                                    <td>939225</td>
+                                    <td>ADAM ABDUSSABUR</td>
+                                    <td><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="6013010215120104010d20070d01090c4e030f0d">[email&#160;protected]</a></td>
+                                    <td class="text-right">
+                                        <a href="employees_edit.php?id=1" class="btn btn-primary">edit</a>
+                                        <a href="_delentry.php?mode=employees&id=1" class="btn btn-danger" onClick="return(confirm('Are you sure you want to delete this entry?'))">delete</a>
+                                    </td>
+                                </tr>
+
+
+
+                                <tr>
+                                    <td>939458</td>
+                                    <td>Adam Denmark</td>
+                                    <td><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="761712171b581213181b17041d4e474536111b171f1a5815191b">[email&#160;protected]</a></td>
+                                    <td class="text-right">
+                                        <a href="employees_edit.php?id=2" class="btn btn-primary">edit</a>
+                                        <a href="_delentry.php?mode=employees&id=2" class="btn btn-danger" onClick="return(confirm('Are you sure you want to delete this entry?'))">delete</a>
+                                    </td>
+                                </tr>
+
+
+
+                                <tr>
+                                    <td>937459</td>
+                                    <td>Adam Mansour</td>
+                                    <td><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="ec88999f87878d96998283ac8b818d8580c28f8381">[email&#160;protected]</a></td>
+                                    <td class="text-right">
+                                        <a href="employees_edit.php?id=3" class="btn btn-primary">edit</a>
+                                        <a href="_delentry.php?mode=employees&id=3" class="btn btn-danger" onClick="return(confirm('Are you sure you want to delete this entry?'))">delete</a>
+                                    </td>
+                                </tr>
+
+
+
+                                <tr>
+                                    <td>937680</td>
+                                    <td>Adria A Hernandez</td>
+                                    <td><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="c283a6b0aba3a3aca3a0a7aeaea382a5afa3abaeeca1adaf">[email&#160;protected]</a></td>
+                                    <td class="text-right">
+                                        <a href="employees_edit.php?id=4" class="btn btn-primary">edit</a>
+                                        <a href="_delentry.php?mode=employees&id=4" class="btn btn-danger" onClick="return(confirm('Are you sure you want to delete this entry?'))">delete</a>
+                                    </td>
+                                </tr>
+
+
+
+                                <tr>
+                                    <td>939233</td>
+                                    <td>Akili Lawson</td>
+                                    <td><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="c6a8b3aab2b4a7a4a3a7aba0afaaabb586a1aba7afaae8a5a9ab">[email&#160;protected]</a></td>
+                                    <td class="text-right">
+                                        <a href="employees_edit.php?id=5" class="btn btn-primary">edit</a>
+                                        <a href="_delentry.php?mode=employees&id=5" class="btn btn-danger" onClick="return(confirm('Are you sure you want to delete this entry?'))">delete</a>
+                                    </td>
+                                </tr>
+
+
+
+                                <tr>
+                                    <td>939411</td>
+                                    <td>Alan Miles</td>
+                                    <td><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="3f5e535e515256535a4c0d0f0e0c7f58525e5653115c5052">[email&#160;protected]</a></td>
+                                    <td class="text-right">
+                                        <a href="employees_edit.php?id=6" class="btn btn-primary">edit</a>
+                                        <a href="_delentry.php?mode=employees&id=6" class="btn btn-danger" onClick="return(confirm('Are you sure you want to delete this entry?'))">delete</a>
+                                    </td>
+                                </tr>
+
+
+
+                                <tr>
+                                    <td>937682</td>
+                                    <td>Alexander Edwards</td>
+                                    <td><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="e78682d5d2d0d1dfd0a7808a868e8bc984888a">[email&#160;protected]</a></td>
+                                    <td class="text-right">
+                                        <a href="employees_edit.php?id=7" class="btn btn-primary">edit</a>
+                                        <a href="_delentry.php?mode=employees&id=7" class="btn btn-danger" onClick="return(confirm('Are you sure you want to delete this entry?'))">delete</a>
+                                    </td>
+                                </tr>
+
+
+
+                                <tr>
+                                    <td>510446</td>
+                                    <td>Alice Strickland</td>
+                                    <td><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="0152757368626a6d606f65606d6862643635417860696e6e2f626e6c">[email&#160;protected]</a></td>
+                                    <td class="text-right">
+                                        <a href="employees_edit.php?id=8" class="btn btn-primary">edit</a>
+                                        <a href="_delentry.php?mode=employees&id=8" class="btn btn-danger" onClick="return(confirm('Are you sure you want to delete this entry?'))">delete</a>
+                                    </td>
+                                </tr>
+
+
+
+                                <tr>
+                                    <td>938288</td>
+                                    <td>Alvin Bonaparte</td>
+                                    <td><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="cc8da0baa5a293aea3a2adbcadbeb8a98cb5ada4a3a3e2afa3a1">[email&#160;protected]</a></td>
+                                    <td class="text-right">
+                                        <a href="employees_edit.php?id=9" class="btn btn-primary">edit</a>
+                                        <a href="_delentry.php?mode=employees&id=9" class="btn btn-danger" onClick="return(confirm('Are you sure you want to delete this entry?'))">delete</a>
+                                    </td>
+                                </tr>
+
+
+
+                                <tr>
+                                    <td>936003</td>
+                                    <td>Amanda Lee</td>
+                                    <td><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="e5978c868e9c848b818488848b8184928c89898c848896d4dcddd0a58288848c89cb868a88">[email&#160;protected]</a></td>
+                                    <td class="text-right">
+                                        <a href="employees_edit.php?id=10" class="btn btn-primary">edit</a>
+                                        <a href="_delentry.php?mode=employees&id=10" class="btn btn-danger" onClick="return(confirm('Are you sure you want to delete this entry?'))">delete</a>
+                                    </td>
+                                </tr>
+
+
+
+                                <tr>
+                                    <td>939333</td>
+                                    <td>Amir Daniels</td>
+                                    <td><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="b0d1ddd9c2d4d1ded9d5dcc3dfc7f0d7ddd1d9dc9ed3dfdd">[email&#160;protected]</a></td>
+                                    <td class="text-right">
+                                        <a href="employees_edit.php?id=11" class="btn btn-primary">edit</a>
+                                        <a href="_delentry.php?mode=employees&id=11" class="btn btn-danger" onClick="return(confirm('Are you sure you want to delete this entry?'))">delete</a>
+                                    </td>
+                                </tr>
+
+
+
+                                <tr>
+                                    <td>939298</td>
+                                    <td>Amy Swint</td>
+                                    <td><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="a9c8c4d087dadec0c7dde9c0cac5c6dccd87cac6c4">[email&#160;protected]</a></td>
+                                    <td class="text-right">
+                                        <a href="employees_edit.php?id=12" class="btn btn-primary">edit</a>
+                                        <a href="_delentry.php?mode=employees&id=12" class="btn btn-danger" onClick="return(confirm('Are you sure you want to delete this entry?'))">delete</a>
+                                    </td>
+                                </tr>
+
+
+
+                                <tr>
+                                    <td>939256</td>
+                                    <td>Andrew Dodd</td>
+                                    <td><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="f1909f95839486959e9595c0c1c1b1969c90989ddf929e9c">[email&#160;protected]</a></td>
+                                    <td class="text-right">
+                                        <a href="employees_edit.php?id=13" class="btn btn-primary">edit</a>
+                                        <a href="_delentry.php?mode=employees&id=13" class="btn btn-danger" onClick="return(confirm('Are you sure you want to delete this entry?'))">delete</a>
+                                    </td>
+                                </tr>
+
+
+
+                                <tr>
+                                    <td>939341</td>
+                                    <td>Angel Hawkins</td>
+                                    <td><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="80e1eee7e5ece8e1f7ebe9eef3b3b1b9c0e9e3eceff5e4aee3efed">[email&#160;protected]</a></td>
+                                    <td class="text-right">
+                                        <a href="employees_edit.php?id=14" class="btn btn-primary">edit</a>
+                                        <a href="_delentry.php?mode=employees&id=14" class="btn btn-danger" onClick="return(confirm('Are you sure you want to delete this entry?'))">delete</a>
+                                    </td>
+                                </tr>
+
+
+
+                                <tr>
+                                    <td>938725</td>
+                                    <td>Angel Hernandez</td>
+                                    <td><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="10717e77757c6364657162747875627e717e74756a506971787f7f3e737f7d">[email&#160;protected]</a></td>
+                                    <td class="text-right">
+                                        <a href="employees_edit.php?id=15" class="btn btn-primary">edit</a>
+                                        <a href="_delentry.php?mode=employees&id=15" class="btn btn-danger" onClick="return(confirm('Are you sure you want to delete this entry?'))">delete</a>
+                                    </td>
+                                </tr>
+
+
+
+                                <tr>
+                                    <td>937446</td>
+                                    <td>Angela Brady</td>
+                                    <td><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="8dece3eae8e1ecefffece9f4cde2f8f9e1e2e2e6a3eee2e0">[email&#160;protected]</a></td>
+                                    <td class="text-right">
+                                        <a href="employees_edit.php?id=16" class="btn btn-primary">edit</a>
+                                        <a href="_delentry.php?mode=employees&id=16" class="btn btn-danger" onClick="return(confirm('Are you sure you want to delete this entry?'))">delete</a>
+                                    </td>
+                                </tr>
+
+
+
+                                <tr>
+                                    <td>939288</td>
+                                    <td>Anthony Houston</td>
+                                    <td><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="fc91959f9d949493898f889392cdcdcabc9b919d9590d29f9391">[email&#160;protected]</a></td>
+                                    <td class="text-right">
+                                        <a href="employees_edit.php?id=17" class="btn btn-primary">edit</a>
+                                        <a href="_delentry.php?mode=employees&id=17" class="btn btn-danger" onClick="return(confirm('Are you sure you want to delete this entry?'))">delete</a>
+                                    </td>
+                                </tr>
+
+
+
+                                <tr>
+                                    <td>939265</td>
+                                    <td>Anthony Oyer</td>
+                                    <td><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="186c7776613677617d6a587f75797174367b7775">[email&#160;protected]</a></td>
+                                    <td class="text-right">
+                                        <a href="employees_edit.php?id=18" class="btn btn-primary">edit</a>
+                                        <a href="_delentry.php?mode=employees&id=18" class="btn btn-danger" onClick="return(confirm('Are you sure you want to delete this entry?'))">delete</a>
+                                    </td>
+                                </tr>
+
+
+
+                                <tr>
+                                    <td>939327</td>
+                                    <td>Anyah Ford</td>
+                                    <td><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="cbaaa5b2aaa3a6aaa7aab2b8a38baca6aaa2a7e5a8a4a6">[email&#160;protected]</a></td>
+                                    <td class="text-right">
+                                        <a href="employees_edit.php?id=19" class="btn btn-primary">edit</a>
+                                        <a href="_delentry.php?mode=employees&id=19" class="btn btn-danger" onClick="return(confirm('Are you sure you want to delete this entry?'))">delete</a>
+                                    </td>
+                                </tr>
+
+
+
+                                <tr>
+                                    <td>939242</td>
+                                    <td>Ariel Mcswain</td>
+                                    <td><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="01606c62727660686f3941666c60686d2f626e6c">[email&#160;protected]</a></td>
+                                    <td class="text-right">
+                                        <a href="employees_edit.php?id=20" class="btn btn-primary">edit</a>
+                                        <a href="_delentry.php?mode=employees&id=20" class="btn btn-danger" onClick="return(confirm('Are you sure you want to delete this entry?'))">delete</a>
+                                    </td>
+                                </tr>
+
+
+
+                                <tr>
+                                    <td>510906</td>
+                                    <td>Arlon Delorge</td>
+                                    <td><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="c7a4a4a8a9b4b3b5aea4b3a8b5b487a0aaa6aeabe9a4a8aa">[email&#160;protected]</a></td>
+                                    <td class="text-right">
+                                        <a href="employees_edit.php?id=21" class="btn btn-primary">edit</a>
+                                        <a href="_delentry.php?mode=employees&id=21" class="btn btn-danger" onClick="return(confirm('Are you sure you want to delete this entry?'))">delete</a>
+                                    </td>
+                                </tr>
+
+
+
+                                <tr>
+                                    <td>938960</td>
+                                    <td>Ashely Jackson</td>
+                                    <td><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="7c15121815171d52161d1f170f1312444f444b3c1b111d1510521f1311">[email&#160;protected]</a></td>
+                                    <td class="text-right">
+                                        <a href="employees_edit.php?id=22" class="btn btn-primary">edit</a>
+                                        <a href="_delentry.php?mode=employees&id=22" class="btn btn-danger" onClick="return(confirm('Are you sure you want to delete this entry?'))">delete</a>
+                                    </td>
+                                </tr>
+
+
+
+                                <tr>
+                                    <td>938087</td>
+                                    <td>Ashley Carrethers</td>
+                                    <td><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="a1c0d2c9cdc4d88fc2c0d3d3c4d5c9c4d3d28fc0c2e1c6ccc0c8cd8fc2cecc">[email&#160;protected]</a></td>
+                                    <td class="text-right">
+                                        <a href="employees_edit.php?id=23" class="btn btn-primary">edit</a>
+                                        <a href="_delentry.php?mode=employees&id=23" class="btn btn-danger" onClick="return(confirm('Are you sure you want to delete this entry?'))">delete</a>
+                                    </td>
+                                </tr>
+
+
+
+                                <tr>
+                                    <td>938893</td>
+                                    <td>Ashley Ricks</td>
+                                    <td><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="99ebf0faf2eaf7a0ada0d9fef4f8f0f5b7faf6f4">[email&#160;protected]</a></td>
+                                    <td class="text-right">
+                                        <a href="employees_edit.php?id=24" class="btn btn-primary">edit</a>
+                                        <a href="_delentry.php?mode=employees&id=24" class="btn btn-danger" onClick="return(confirm('Are you sure you want to delete this entry?'))">delete</a>
+                                    </td>
+                                </tr>
+
+
+
+                                <tr>
+                                    <td>939320</td>
+                                    <td>Augusta Schubert</td>
+                                    <td><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="1e7f6b796b6d6a7f3079306d7d766b7c7b6c6a5e79737f7772307d7173">[email&#160;protected]</a></td>
+                                    <td class="text-right">
+                                        <a href="employees_edit.php?id=25" class="btn btn-primary">edit</a>
+                                        <a href="_delentry.php?mode=employees&id=25" class="btn btn-danger" onClick="return(confirm('Are you sure you want to delete this entry?'))">delete</a>
+                                    </td>
+                                </tr>
+
+
+
+                                <tr>
+                                    <td>935831</td>
+                                    <td>Austin Garrow</td>
+                                    <td><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="05626477776a72303735456268646c692b666a68">[email&#160;protected]</a></td>
+                                    <td class="text-right">
+                                        <a href="employees_edit.php?id=26" class="btn btn-primary">edit</a>
+                                        <a href="_delentry.php?mode=employees&id=26" class="btn btn-danger" onClick="return(confirm('Are you sure you want to delete this entry?'))">delete</a>
+                                    </td>
+                                </tr>
+
+
+
+                                <tr>
+                                    <td>937771</td>
+                                    <td>Avery Felder II</td>
+                                    <td><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="1879727e7d747c7d6a28292c587f75797174367b7775">[email&#160;protected]</a></td>
+                                    <td class="text-right">
+                                        <a href="employees_edit.php?id=27" class="btn btn-primary">edit</a>
+                                        <a href="_delentry.php?mode=employees&id=27" class="btn btn-danger" onClick="return(confirm('Are you sure you want to delete this entry?'))">delete</a>
+                                    </td>
+                                </tr>
+
+
+
+                                <tr>
+                                    <td>939484</td>
+                                    <td>Avery Straw</td>
+                                    <td><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="f3928596818a8087819284b3949e929a9fdd909c9e">[email&#160;protected]</a></td>
+                                    <td class="text-right">
+                                        <a href="employees_edit.php?id=28" class="btn btn-primary">edit</a>
+                                        <a href="_delentry.php?mode=employees&id=28" class="btn btn-danger" onClick="return(confirm('Are you sure you want to delete this entry?'))">delete</a>
+                                    </td>
+                                </tr>
+
+
+
+                                <tr>
+                                    <td>939070</td>
+                                    <td>Bailey Frazier</td>
+                                    <td><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="2b494a42474e524d594a51424e591b1a181a6b4c464a424705484446">[email&#160;protected]</a></td>
+                                    <td class="text-right">
+                                        <a href="employees_edit.php?id=29" class="btn btn-primary">edit</a>
+                                        <a href="_delentry.php?mode=employees&id=29" class="btn btn-danger" onClick="return(confirm('Are you sure you want to delete this entry?'))">delete</a>
+                                    </td>
+                                </tr>
+
+
+
+                                <tr>
+                                    <td>935969</td>
+                                    <td>Barbara Gillespie</td>
+                                    <td><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="bedcdad98f8c8d8e8ad9feddd1d3dddfcdca90d0dbca">[email&#160;protected]</a></td>
+                                    <td class="text-right">
+                                        <a href="employees_edit.php?id=30" class="btn btn-primary">edit</a>
+                                        <a href="_delentry.php?mode=employees&id=30" class="btn btn-danger" onClick="return(confirm('Are you sure you want to delete this entry?'))">delete</a>
+                                    </td>
+                                </tr>
+
+
+
+                                <tr>
+                                    <td>938223</td>
+                                    <td>Barbara Kelley</td>
+                                    <td><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="0d7e647e6868353d4d6a606c6461236e6260">[email&#160;protected]</a></td>
+                                    <td class="text-right">
+                                        <a href="employees_edit.php?id=31" class="btn btn-primary">edit</a>
+                                        <a href="_delentry.php?mode=employees&id=31" class="btn btn-danger" onClick="return(confirm('Are you sure you want to delete this entry?'))">delete</a>
+                                    </td>
+                                </tr>
+
+
+
+                                <tr>
+                                    <td>939227</td>
+                                    <td>Barry Lefevre</td>
+                                    <td><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="8be7eeedeefdf9eee7e4fee2eecbeceae6e2e7a5e8e4e6">[email&#160;protected]</a></td>
+                                    <td class="text-right">
+                                        <a href="employees_edit.php?id=32" class="btn btn-primary">edit</a>
+                                        <a href="_delentry.php?mode=employees&id=32" class="btn btn-danger" onClick="return(confirm('Are you sure you want to delete this entry?'))">delete</a>
+                                    </td>
+                                </tr>
+
+
+
+                                <tr>
+                                    <td>510399</td>
+                                    <td>Bonnie June Bishop</td>
+                                    <td><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="34565e565d475c0201745c5b4059555d581a575b59">[email&#160;protected]</a></td>
+                                    <td class="text-right">
+                                        <a href="employees_edit.php?id=33" class="btn btn-primary">edit</a>
+                                        <a href="_delentry.php?mode=employees&id=33" class="btn btn-danger" onClick="return(confirm('Are you sure you want to delete this entry?'))">delete</a>
+                                    </td>
+                                </tr>
+
+
+
+                                <tr>
+                                    <td>939376</td>
+                                    <td>Brant Datus</td>
+                                    <td><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="f99b8b98978d9d988d8c8ab99e94989095d79a9694">[email&#160;protected]</a></td>
+                                    <td class="text-right">
+                                        <a href="employees_edit.php?id=34" class="btn btn-primary">edit</a>
+                                        <a href="_delentry.php?mode=employees&id=34" class="btn btn-danger" onClick="return(confirm('Are you sure you want to delete this entry?'))">delete</a>
+                                    </td>
+                                </tr>
+
+
+
+                                <tr>
+                                    <td>939230</td>
+                                    <td>Brian Wiggins</td>
+                                    <td><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="4d2f3f242c233a242a2a24233e7e7c7e0d2a202c2421632e2220">[email&#160;protected]</a></td>
+                                    <td class="text-right">
+                                        <a href="employees_edit.php?id=35" class="btn btn-primary">edit</a>
+                                        <a href="_delentry.php?mode=employees&id=35" class="btn btn-danger" onClick="return(confirm('Are you sure you want to delete this entry?'))">delete</a>
+                                    </td>
+                                </tr>
+
+
+
+                                <tr>
+                                    <td>939474</td>
+                                    <td>Brittany Bell</td>
+                                    <td><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="fa9888938e8e9b9483989f9696cbc9cdba9d979b9396d4999597">[email&#160;protected]</a></td>
+                                    <td class="text-right">
+                                        <a href="employees_edit.php?id=36" class="btn btn-primary">edit</a>
+                                        <a href="_delentry.php?mode=employees&id=36" class="btn btn-danger" onClick="return(confirm('Are you sure you want to delete this entry?'))">delete</a>
+                                    </td>
+                                </tr>
+
+
+
+                                <tr>
+                                    <td>939398</td>
+                                    <td>Brittany Cherry</td>
+                                    <td><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="385a4a5941565d080e090e785f55595154165b5755">[email&#160;protected]</a></td>
+                                    <td class="text-right">
+                                        <a href="employees_edit.php?id=37" class="btn btn-primary">edit</a>
+                                        <a href="_delentry.php?mode=employees&id=37" class="btn btn-danger" onClick="return(confirm('Are you sure you want to delete this entry?'))">delete</a>
+                                    </td>
+                                </tr>
+
+
+
+                                <tr>
+                                    <td>936052</td>
+                                    <td>Brittany Stone</td>
+                                    <td><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="3566415a5b50570107030c01755d5a4158545c591b565a58">[email&#160;protected]</a></td>
+                                    <td class="text-right">
+                                        <a href="employees_edit.php?id=38" class="btn btn-primary">edit</a>
+                                        <a href="_delentry.php?mode=employees&id=38" class="btn btn-danger" onClick="return(confirm('Are you sure you want to delete this entry?'))">delete</a>
+                                    </td>
+                                </tr>
+
+
+
+                                <tr>
+                                    <td>939102</td>
+                                    <td>Brittney Flakes</td>
+                                    <td><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="fc9ed292d29a909d97998fcccecdccbc9b919d9590d29f9391">[email&#160;protected]</a></td>
+                                    <td class="text-right">
+                                        <a href="employees_edit.php?id=39" class="btn btn-primary">edit</a>
+                                        <a href="_delentry.php?mode=employees&id=39" class="btn btn-danger" onClick="return(confirm('Are you sure you want to delete this entry?'))">delete</a>
+                                    </td>
+                                </tr>
+
+
+
+                                <tr>
+                                    <td>939485</td>
+                                    <td>Brooke Thurmond</td>
+                                    <td><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="0567776a6a6e60716d7077686a6b613432456c66696a70612b666a68">[email&#160;protected]</a></td>
+                                    <td class="text-right">
+                                        <a href="employees_edit.php?id=40" class="btn btn-primary">edit</a>
+                                        <a href="_delentry.php?mode=employees&id=40" class="btn btn-danger" onClick="return(confirm('Are you sure you want to delete this entry?'))">delete</a>
+                                    </td>
+                                </tr>
+
+
+
+                                <tr>
+                                    <td>938240</td>
+                                    <td>Bryce Althoff</td>
+                                    <td><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="1a786863797f7b766e72757c7c2d2a2c5a7d777b737634797577">[email&#160;protected]</a></td>
+                                    <td class="text-right">
+                                        <a href="employees_edit.php?id=41" class="btn btn-primary">edit</a>
+                                        <a href="_delentry.php?mode=employees&id=41" class="btn btn-danger" onClick="return(confirm('Are you sure you want to delete this entry?'))">delete</a>
+                                    </td>
+                                </tr>
+
+
+
+                                <tr>
+                                    <td>939247</td>
+                                    <td>Caeson Hodge</td>
+                                    <td><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="accfcdc9dfc3c2c49d9eeccbc1cdc5c082cfc3c1">[email&#160;protected]</a></td>
+                                    <td class="text-right">
+                                        <a href="employees_edit.php?id=42" class="btn btn-primary">edit</a>
+                                        <a href="_delentry.php?mode=employees&id=42" class="btn btn-danger" onClick="return(confirm('Are you sure you want to delete this entry?'))">delete</a>
+                                    </td>
+                                </tr>
+
+
+
+                                <tr>
+                                    <td>939330</td>
+                                    <td>Caleb Ars</td>
+                                    <td><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="aeddd9c7c0c9c8c1dbdcdac6cbc8cbc0cdcbeec9c3cfc7c280cdc1c3">[email&#160;protected]</a></td>
+                                    <td class="text-right">
+                                        <a href="employees_edit.php?id=43" class="btn btn-primary">edit</a>
+                                        <a href="_delentry.php?mode=employees&id=43" class="btn btn-danger" onClick="return(confirm('Are you sure you want to delete this entry?'))">delete</a>
+                                    </td>
+                                </tr>
+
+
+
+                                <tr>
+                                    <td>939500</td>
+                                    <td>Cambreon Ash</td>
+                                    <td><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="0c78756969616d64644c656f60637968226f6361">[email&#160;protected]</a></td>
+                                    <td class="text-right">
+                                        <a href="employees_edit.php?id=44" class="btn btn-primary">edit</a>
+                                        <a href="_delentry.php?mode=employees&id=44" class="btn btn-danger" onClick="return(confirm('Are you sure you want to delete this entry?'))">delete</a>
+                                    </td>
+                                </tr>
+
+
+
+                                <tr>
+                                    <td>939326</td>
+                                    <td>Caroline Hettich</td>
+                                    <td><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="2c4f4d5e434045424944495858454f44446c4b414d4540024f4341">[email&#160;protected]</a></td>
+                                    <td class="text-right">
+                                        <a href="employees_edit.php?id=45" class="btn btn-primary">edit</a>
+                                        <a href="_delentry.php?mode=employees&id=45" class="btn btn-danger" onClick="return(confirm('Are you sure you want to delete this entry?'))">delete</a>
+                                    </td>
+                                </tr>
+
+
+
+                                <tr>
+                                    <td>939015</td>
+                                    <td>Casey Myers</td>
+                                    <td><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="bedddfcddbc7d3c7dbcccddad3d3dafed9d3dfd7d290ddd1d3">[email&#160;protected]</a></td>
+                                    <td class="text-right">
+                                        <a href="employees_edit.php?id=46" class="btn btn-primary">edit</a>
+                                        <a href="_delentry.php?mode=employees&id=46" class="btn btn-danger" onClick="return(confirm('Are you sure you want to delete this entry?'))">delete</a>
+                                    </td>
+                                </tr>
+
+
+
+                                <tr>
+                                    <td>938129</td>
+                                    <td>Celine Anders</td>
+                                    <td><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="99faf8f7fdfcebeaaba9a9a8d9fef4f8f0f5b7faf6f4">[email&#160;protected]</a></td>
+                                    <td class="text-right">
+                                        <a href="employees_edit.php?id=47" class="btn btn-primary">edit</a>
+                                        <a href="_delentry.php?mode=employees&id=47" class="btn btn-danger" onClick="return(confirm('Are you sure you want to delete this entry?'))">delete</a>
+                                    </td>
+                                </tr>
+
+
+
+                                <tr>
+                                    <td>939408</td>
+                                    <td>Chalen Liferidge</td>
+                                    <td><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="2844414e4d5a414c4f4d4b4049444d46191a684f45494144064b4745">[email&#160;protected]</a></td>
+                                    <td class="text-right">
+                                        <a href="employees_edit.php?id=48" class="btn btn-primary">edit</a>
+                                        <a href="_delentry.php?mode=employees&id=48" class="btn btn-danger" onClick="return(confirm('Are you sure you want to delete this entry?'))">delete</a>
+                                    </td>
+                                </tr>
+
+
+
+                                <tr>
+                                    <td>939465</td>
+                                    <td>Chandler Burton</td>
+                                    <td><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="d6b5beb7b8b2bab3a4f8b4a3a4a2b9b8e6e496b1bbb7bfbaf8b5b9bb">[email&#160;protected]</a></td>
+                                    <td class="text-right">
+                                        <a href="employees_edit.php?id=49" class="btn btn-primary">edit</a>
+                                        <a href="_delentry.php?mode=employees&id=49" class="btn btn-danger" onClick="return(confirm('Are you sure you want to delete this entry?'))">delete</a>
+                                    </td>
+                                </tr>
+
+
+
+                                <tr>
+                                    <td>612015</td>
+                                    <td>Charles Gerow</td>
+                                    <td><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="64070c05160801170a0301160b13240d07080b11004a070b09">[email&#160;protected]</a></td>
+                                    <td class="text-right">
+                                        <a href="employees_edit.php?id=50" class="btn btn-primary">edit</a>
+                                        <a href="_delentry.php?mode=employees&id=50" class="btn btn-danger" onClick="return(confirm('Are you sure you want to delete this entry?'))">delete</a>
+                                    </td>
+                                </tr>
+
+
+
+
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- start inner pages footer -->
+    <footer class="inner-footer">
+        <div class="container">
+            <div class="absolute-img">
+                <img src="images/footer-edge.png">
+            </div>
+            <div class="copyright text-center">
+                <img src="images/copyright2.svg">
+            </div>
+        </div>
+    </footer>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/custom.js"></script>
+
+</body>
+
+</html>

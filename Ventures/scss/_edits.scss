@@ -1,0 +1,22 @@
+/**** new edits here ****/
+
+body {
+    height: auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.FV-inner {
+    height: auto;
+    overflow-y: initial;
+}
+
+footer.inner-footer {
+    margin-top: auto;
+}
+
+.FV-login {
+    height: auto;
+    overflow-y: initial;
+}
